@@ -1,0 +1,32 @@
+{
+  "name": "trump.js",
+  "version": "1.0.0",
+  "description": "Make your website great again",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisdingli/Trump.js.git"
+  },
+  "keywords": [
+    "es6",
+    "promise",
+    "trump"
+  ],
+  "author": "Christopher Dingli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisdingli/Trump.js/issues"
+  },
+  "homepage": "https://github.com/chrisdingli/Trump.js#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "uglify-js": "git://github.com/mishoo/UglifyJS2.git#harmony-v2.8.22",
+    "uglifyjs-webpack-plugin": "^0.4.3",
+    "webpack": "^2.6.1"
+  }
+}

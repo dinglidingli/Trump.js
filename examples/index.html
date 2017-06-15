@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Trump.js</title>
+    </head>
+    <body>
+        <script src="../dist/trump.js"></script>
+        <script>
+            var testString = new Promise(function (resolve) {
+                resolve('This is a string');    
+            });
+            
+            testString.then((response) => {
+                console.log('String', response);
+            });
+
+            var testNumber = new Promise(function (resolve) {
+                resolve(12345);    
+            });
+            
+            testNumber.then((response) => {
+                console.log('Number', response);
+            });
+
+            var testBoolean = new Promise(function (resolve) {
+                resolve(true);    
+            });
+
+            testBoolean.then((response) => {
+                console.log('Boolean', response);
+            });
+
+            var testArray = new Promise(function (resolve) {
+                resolve([1, 2, 'a', 'b', true, false]);    
+            });
+
+            testArray.then((response) => {
+                console.log('Array', response);
+            });
+        </script>
+    </body>
+</html>
