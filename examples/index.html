@@ -30,6 +30,27 @@
                 console.log('Boolean', response);
             });
 
+            var testObject = new Promise(function(resolve) {
+                resolve({
+                    a: 'a value',
+                    b: true,
+                    c: function() { console.log('Should not change'); },
+                    d: 12345,
+                    e: {
+                        ea: 'another string',
+                        eb: function() { console.log('Should not change'); }
+                    },
+                    f: [
+                        { fa: true, fb: 12345 },
+                        [ true, false ]
+                    ]
+                });
+            })
+
+            testObject.then((response) => {
+                console.log('Object', response);
+            });
+
             var testArray = new Promise(function (resolve) {
                 resolve([1, 2, 'a', 'b', true, false]);    
             });
